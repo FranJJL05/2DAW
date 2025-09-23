@@ -7,13 +7,16 @@
 </head>
 <body>
     <script>
-        function tieneTresDigitos(num1) {
-            let resultado;
-            for (let i = 0; i < array.length; i++) {
-                const element = array[i];
-                
+        function tieneTresDigitos() {
+            if (num1 >= 100 && num1 <= 999) {
+                return "Sí"
+            }else{
+                return "No"
             }
         }
+
+        let num1 = prompt(`Introduce un número para comprobar si tiene 3 dígitos`);
+        document.write(`El número ${num1} ` + tieneTresDigitos(num1) + ` tiene 3 dígitos`);
     </script>
 </body>
 </html>

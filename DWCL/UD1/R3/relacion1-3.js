@@ -1,14 +1,15 @@
-function ageCalculator() {
-  let currentYear = new Date().getFullYear();
-  let birthYear = prompt("Por favor, introduce tu año de nacimiento:");
-  
-  if (!birthYear || isNaN(birthYear)) {
-    alert("Por favor, introduce un año válido.");
-    return;
-  }
+function calculadoraDeEdad() {
+    let añoActual = new Date().getFullYear();
+    let añoNacimiento = prompt("Por favor, introduce tu año de nacimiento:");
 
-  let age1 = currentYear - birthYear;
-  let age2 = age1 - 1;
+    if (!añoNacimiento || isNaN(añoNacimiento)) {
+        alert("Por favor, introduce un año válido.");
+        return;
+    }
 
-  alert(`Tienes ${age2} o ${age1} años.`);
+    let edad1 = añoActual - añoNacimiento;
+    let edad2 = edad1 - 1;
+
+    alert(`Tienes ${edad2} o ${edad1} años.`);
 }
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+    <style>
+        .uno {
+            width: 50%;
+        }
+
+        .uno td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .dos {
+            width: 100%;
+        }
+
+        .dos td {
+            border: 1px solid black;
+        }
+
+        .tres {
+            width: 100%;
+        }
+
+        .tres td {
+            padding: 10px;
+        }
+
+        .yellow-cell {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="uno">
+        <tr>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td colspan="4"></td>
+            <td rowspan="2" colspan="2"></td>
+        </tr>
+        <tr>
+            <td rowspan="3" colspan="2"></td>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td colspan="5"></td>
+        </tr>
+        <tr>
+            <td colspan="5"></td>
+        </tr>
+    </table>
+    <br><br><br>
+    <table class="dos">
+        <tr>
+            <td colspan="2" style="width: 8%;"></td>
+            <td></td>
+            <td>
+                <table class="tres">
+                    <tr>
+                        <td class="yellow-cell"></td>
+                        <td class="yellow-cell"></td>
+                        <td class="yellow-cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="yellow-cell"></td>
+                        <td class="yellow-cell"></td>
+                        <td class="yellow-cell"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td>
+                <table class="tres">
+                    <tr>
+                        <td class="yellow-cell"></td>
+                        <td class="yellow-cell"></td>
+                        <td class="yellow-cell"></td>
+                        <td class="yellow-cell"></td>
+                        <td class="yellow-cell"></td>
+                    </tr>
+                </table>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td>
+                <table class="tres">
+                    <tr>
+                        <td colspan="2" class="yellow-cell"></td>
+                        <td colspan="2" class="yellow-cell"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="yellow-cell"></td>
+                        <td colspan="2" class="yellow-cell"></td>
+                    </tr>
+                </table>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>

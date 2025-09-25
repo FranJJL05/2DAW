@@ -6,8 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 5</title>
     <style>
-        th,td {
+        th,
+        td {
             border: 1px solid black;
+        }
+
+        .horario {
+            border-collapse: collapse;
+        }
+
+        .horario th,
+        .horario td {
+            border: none;
+            border-bottom: 1px solid black;
+        }
+
+        .horario tbody tr:last-child {
+            border-bottom: none;
         }
     </style>
 </head>
@@ -60,7 +75,7 @@
         </tbody>
     </table>
     <br><br><br>
-    <table>
+    <table class="horario">
         <caption>HORARIO DE CLASE CUROS 2023-2024</caption>
         <thead>
             <th>HORAS</th>
